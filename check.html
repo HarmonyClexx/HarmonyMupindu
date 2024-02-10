@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+/* Style the image element */
+img {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+/* Style the fullscreen element */
+.fullscreen {
+  /* display: none; */
+  position:absolute;
+  top: 0;
+  left: 0;
+  /* width: 50vw; */
+  height: 100vh;
+  object-fit: cover;
+  z-index: 9999;
+}
+</style>
+</head>
+<body>
+<!-- Add an image element with an onclick attribute -->
+<img id="myImage" src="/images/mortgageCalculator.png" onclick="toggleFullscreen()">
+
+<!-- Add a script tag with the toggleFullscreen function -->
+<script>
+// Get the image element
+var img = document.getElementById("myImage");
+
+// Define the toggleFullscreen function
+function toggleFullscreen() {
+  // Check if the image has the fullscreen class
+  if (img.classList.contains("fullscreen")) {
+    // Remove the fullscreen class
+    img.classList.remove("fullscreen");
+  } else {
+    // Add the fullscreen class
+    img.classList.add("fullscreen");
+  }
+}
+</script>
+</body>
+</html>
