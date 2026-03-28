@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const About = () => {
     return (
         <section id="about" className="py-24 max-w-5xl mx-auto px-6">
